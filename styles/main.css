@@ -1,0 +1,318 @@
+/*  Primary Styles
+******************************/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  margin: 0 0 50px;
+  background: #E2F4C7;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #000;
+  line-height: 1.3;
+}
+
+/*  Navigation
+******************************/
+
+.menu-trigger {
+  display: block;
+  padding: 20px;
+/*  background-color: #333;*/
+  background-color: #bbb;
+  color: #555;
+}
+
+.fa-times {
+  display: none;
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation-expanded {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+/*  background-color: #444;*/
+  background-color: #ddd;
+}
+
+.navigation li {
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: #555;
+}
+
+.navigation a:hover {
+/*  background-color: #CC5543;*/
+  background-color: #E2F4C7;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .menu-trigger {
+    display: none;
+  }
+  
+  .navigation {
+    display: block;
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  .navigation li {
+    display: inline-block;
+    width: 150px;
+    margin-right: -5px;
+  }
+}
+
+/*  Footer Style
+******************************/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.social-media {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  padding: 0 5%;
+}
+
+.social-media i {
+  color: #555;
+  transition: color .3s;
+}
+
+.social-media i:hover {
+  opacity: 1;
+}
+
+.social-media a:first-child i:hover {
+  color: #007BB5;
+}
+
+.social-media a:nth-child(2) i:hover {
+  color: #000;
+}
+
+.social-media a:nth-child(3) i:hover {
+  color: #00ACED;
+}
+
+.social-media a:last-child i:hover {
+  color: #DD4B39;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/*  Home Page
+******************************/
+
+.banner-home {
+  height: 400px;
+  margin-left: -75px;
+  background: linear-gradient(0deg, #E2F4C7, transparent 40%),
+              url(../img/banner_SaltCreekBeach.jpg) no-repeat;
+  background-size: cover;
+}
+
+.banner-resume {
+  height: 400px;
+  margin-left: -75px;
+  background: linear-gradient(0deg, #E2F4C7, transparent 40%),
+              url(../img/banner_SaltCreekBeach.jpg) no-repeat;
+  background-size: cover;
+}
+
+.banner-portfolio {
+  height: 400px;
+  margin-left: -75px;
+  background: linear-gradient(0deg, #E2F4C7, transparent 40%),
+              url(../img/banner_SaltCreekBeach.jpg) no-repeat;
+  background-size: cover;
+}
+
+.banner-thoughts {
+  height: 400px;
+  margin-left: -50px;
+  background: linear-gradient(0deg, #E2F4C7, transparent 40%),
+              url(../img/banner_iPhone6.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.banner-text, .banner-text-large {
+  margin-left: 75px;
+  text-align: center;
+  padding-top: 125px;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+  opacity: .9;
+}
+
+.banner-text-large {
+  margin-left: 100px;
+  padding-top: 200px;
+  display: none;
+}
+
+.down-arrow {
+  margin-left: 70px;
+  padding-top: 80px;
+  color: #fff;
+  text-align: center;
+  opacity: .9;
+  
+}
+
+hr {
+  margin-top: 2%;
+  width: 70%;
+  border-bottom: 0px solid #999;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about p {
+  margin-top: 25px;
+  padding: 0 30px;
+  text-align: left;
+}
+
+.about img {
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+@media screen and (orientation: portrait) {
+  
+  .down-arrow {
+    padding-top: 125px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-home {
+    height: 500px;
+    margin-left: -100px;
+  }
+  
+  .banner-text {
+    display: none;
+  }
+  
+  .banner-text-large {
+    display: block;
+    font-size: 42px;
+  }
+  
+  .down-arrow {
+    padding: 150px;
+  }
+  
+  .about {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    overflow: hidden;
+  }
+  
+  .about p {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-home {
+    height: 600px;
+  }
+  
+  .banner-text-large {
+    font-size: 48px;
+  }
+  
+  .down-arrow {
+    padding-top: 225px;
+  }
+  
+  .about {
+    width: 60%;
+  }
+}
+
+/*  Resume Page
+******************************/
+
+@media screen and (min-width: 768px) {
+  .banner-resume {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-resume {
+    height: 600px;
+  }
+}
+
+/*  Portfolio Page
+******************************/
+
+@media screen and (min-width: 768px) {
+  .banner-portfolio {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-portfolio {
+    height: 600px;
+  }
+}
+
+/*  Thoughts Page
+******************************/
+
+@media screen and (min-width: 768px) {
+  .banner-thoughts {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-thoughts {
+    height: 600px;
+  }
+}
